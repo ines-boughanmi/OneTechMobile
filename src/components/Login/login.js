@@ -1,7 +1,7 @@
 import React, {useState} from  'react';
 import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import SignUp from '../SignUp';
+import SignUp from '../SignUp/SignUp'
 
 
 import Interface from '../../Interface/Consultant';
@@ -14,7 +14,7 @@ const LoginComponent = ({onPress, value , setValue, placeholder, secureTextEntry
 
   const navigation = useNavigation();
 
-const onSignupPressed= () => {
+const onSignUpPressed= () => {
 
 navigation.navigate('SignUp');
 };
@@ -42,10 +42,12 @@ const onInterfacepressed= () => {
           <TextInput value={password} onChangeText={setPassword} style={styles.input} placeholder="Enter your password" secureTextEntry={true} />
         </View>
         </View>
-        <TouchableOpacity  style={styles.button}>
-          <Text onPress={onInterfacepressed} style={styles.buttonText}>Login</Text>
+        <TouchableOpacity onPress={onInterfacepressed} style={styles.button}>
+          <Text  style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
-        <Text style={styles.signUpText}>Don't have an account? Sign up <Text onPress={onSignupPressed} style={styles.link}>here</Text></Text>
+        <TouchableOpacity>
+        <Text onPress={onSignUpPressed} style={styles.signUpText}>Don't have an account? Sign up <Text  style={styles.link}>here</Text></Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

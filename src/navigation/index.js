@@ -8,9 +8,10 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 
 import Login from '../components/Login';
 import SignUp from '../components/SignUp';
-import Interface from '../Interface/Pmanager';
-import EditProfile from '../components/pmanager/EditProfile';
-import Profile  from '../components/pmanager/Profile';
+import Interface from '../Interface/Consultant';
+import Profile from '../components/consultant/Profile';
+import EditProfileC from '../components/consultant/EditProfileC';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -21,8 +22,8 @@ const Navigation = () => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Interface" component={Interface}/>
-        <Stack.Screen name="EditProfile" component={EditProfile}/>
         <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="EditProfileC" component={EditProfileC} />
 
 
 

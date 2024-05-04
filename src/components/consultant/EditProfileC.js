@@ -87,37 +87,37 @@ const EditProfile = ({onPress, value , setValue, placeholder, secureTextEntry, n
       <View style={styles.form}>
         <View style={styles.form1}>
         <View style={styles.formGroup}>
-          <Text style={styles.label}>Name</Text>
+          <Text style={styles.label}/*{user.name}*/>Name</Text>
           <TextInput value={name} onChangeText={setName} style={styles.input} placeholder="example" />
           {/* Error messages */}
         </View>
         <View style={styles.formGroup}>
-          <Text style={styles.label}>Last Name</Text>
+          <Text style={styles.label}/*{user.lastName}*/>Last Name</Text>
           <TextInput value={lastname} onChangeText={setLastname} style={styles.input} placeholder="example" />
           {/* Error messages */}
         </View>
         <View style={styles.formGroup}>
-          <Text style={styles.label}>Email</Text>
+          <Text style={styles.label}/*{user.Email}*/>Email</Text>
           <TextInput value={email} onChangeText={setEmail} style={styles.input} placeholder="example@gmail.com" keyboardType="email-address" />
           {/* Error messages */}
         </View>
         <View style={styles.formGroup}>
-          <Text style={styles.label}>Location</Text>
+          <Text style={styles.label}/*{user.Location}*/>Location</Text>
           <TextInput value={location} onChangeText={setLocation} style={styles.input} placeholder="state, city" />
           {/* Error messages */}
         </View>
         <View style={styles.formGroup}>
-          <Text style={styles.label}>Phone</Text>
+          <Text style={styles.label}/*{user.Phone}*/>Phone</Text>
           <TextInput value={phone} onChangeText={setPhone} style={styles.input} placeholder="+216 ********" keyboardType="phone-pad" />
           {/* Error messages */}
         </View>
         <View style={styles.formGroup}>
-          <Text style={styles.label}>Password</Text>
+          <Text style={styles.label}/*{user.Password}*/>Password</Text>
           <TextInput value={password} onChangeText={setPassword} style={styles.input} placeholder="Enter your password" secureTextEntry={true} />
           {/* Error messages */}
         </View>
         <View style={styles.formGroup}>
-          <Text style={styles.label}>Confirm Password</Text>
+          <Text style={styles.label}/*{user.ConfirmPassword}*/>Confirm Password</Text>
           <TextInput value={passwordRepeat} onChangeText={setPasswordRepeat} style={styles.input} placeholder="Confirm your password" secureTextEntry={true} />
           {/* Error messages */}
           </View>

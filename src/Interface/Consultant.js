@@ -28,12 +28,22 @@ const NavConsultant = () => {
       inactiveColor="#748c94"
       shifting={true}
     >
+
+      <Tab.Screen 
+        name="Profile" 
+        component={Profile} 
+        options={{
+          tabBarIcon: ({ color }) => (
+            <Icon name="user" size={25} color={color} />
+          ),
+        }}
+      />
       <Tab.Screen 
         name="Mission" 
         component={Mission} 
         options={{
           tabBarIcon: ({ color }) => (
-            <Icon name="profile" size={25} color={color} />
+            <Icon name="file-text-o" size={25} color={color} />
           ),
         }}
       />
@@ -46,15 +56,7 @@ const NavConsultant = () => {
           ),
         }}
       />
-      <Tab.Screen 
-        name="Profile" 
-        component={Profile} 
-        options={{
-          tabBarIcon: ({ color }) => (
-            <Icon name="user" size={25} color={color} />
-          ),
-        }}
-      />
+
     </Tab.Navigator>
   );
 }
